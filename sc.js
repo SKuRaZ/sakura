@@ -17,7 +17,7 @@ function createFlowerRain(logo) {
 
     for (let i = 0; i < 5; i++) {
         const flower = document.createElement("img");
-        flower.src = "image/flower.png";
+        flower.src = "image/Flower-final.png";
         flower.alt = "flower";
         flower.className = "flower";
         container.appendChild(flower);
@@ -39,7 +39,7 @@ function animateFlower(logoRect, flower) {
     flower.animate(
         [
             { transform: `translateY(${startPositionY}px)`, opacity: 4 },
-            { transform: `translateY(${window.innerHeight}px)`, opacity: 0 },
+            { transform: `translateY(${window.innerHeight}px)`, opacity: 0.001 },
         ],
         {
             duration: duration * 1000,
